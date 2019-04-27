@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: provider-one
+dubbo:
+  registry:
+    id: my-registry
+    address: zookeeper://47.105.97.246:2181
+  application:
+    name: provider-one
+  protocol:
+    name: dubbo
+    port: 21810
+#    serialization: java
+  service:
+    version: 1.0.0

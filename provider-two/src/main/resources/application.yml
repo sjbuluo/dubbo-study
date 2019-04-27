@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: provider-two
+dubbo:
+  registry:
+    address: zookeeper://47.105.97.246:2181
+    id: my-registry
+  protocol:
+    name: dubbo
+    port: 21811
+  application:
+    name: provider-two
+  scan:
+    base-packages: com.sun.health.providerone.provide.service.impl
